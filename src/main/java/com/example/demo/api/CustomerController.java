@@ -14,8 +14,8 @@ public class CustomerController {
 
     @GetMapping
     public ResponseEntity<Customer> getCustomer(){
-        Customer customer =  new Customer(UUID.randomUUID(),"Kyaw Kyaw");
-        return new ResponseEntity<Customer>(customer, HttpStatus.OK);
+        Customer customer =  new Customer(UUID.randomUUID(),"Maung Maung");
+        return new ResponseEntity<>(customer, HttpStatus.OK);
     }
 
     @PostMapping
